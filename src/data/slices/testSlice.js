@@ -7,15 +7,14 @@ export const slice = createSlice({
         userUID: '',
     },
     reducers: {
-        setName: (state, action) => {
-            state.name = action.payload;
+        setAuth: (state, action) => {
+            state.isAuth = action.payload;
         },
     },
 });
 
 export const { firebaseTasks, setName } = slice.actions;
 
-export const selectTasks = (state) => state.tasks.zadania;
-export const showName = (state) => state.tasks.name;
+
 
 export default slice.reducer;
