@@ -12,7 +12,7 @@ const HomeView = () => {
                 <h1>FlashCards</h1>
             </div>
             <Link className={styles.link} to="/login" >Login</Link>
-            <Link className={styles.link} to="/Register" >Register</Link>
+            <Link className={styles.link} to="/register" >Register</Link>
 
         </div>
     );

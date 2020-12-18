@@ -12,13 +12,17 @@ import AuthPage from 'views/AuthPage/AuthPage';
 const Root = () => {
     return (
         <Router basename="/">
+
             <Switch>
                 <Route exact path="/" component={HomeView} />
                 <Route exact path="/login" component={LoginView} />
                 <Route exact path="/register" component={RegisterView} />
                 <PrivateRoute path="/auth" component={AuthPage} />
             </Switch>
-        </Router>
+
+
+
+        </Router >
     );
 }
 
